@@ -31,7 +31,7 @@ if (isPost()){
                     <li><?= $error ?></li>
                 <?php endforeach; ?>
             </ul>
-        <? endif; ?>
+        <?php endif; ?>
 <form method="post">
     <fieldset>
         <div>

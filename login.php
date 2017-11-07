@@ -4,7 +4,7 @@ require_once 'functions.php';
 $errors = [];
 if (isPost()) {
     if (login(getParam('login'), getParam('password'))) {
-        file_put_contents('guest.txt','adm');
+        file_put_contents('guest.txt', 'adm');
         saveName();
         redirect('admin');
     } else {
@@ -31,7 +31,7 @@ if (isPost()) {
                     <li><?= $error ?></li>
                 <?php endforeach; ?>
             </ul>
-        <? endif; ?>
+        <?php endif; ?>
         <form method="post">
             <fieldset>
                 <div>
